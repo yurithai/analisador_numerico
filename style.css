@@ -110,3 +110,28 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 760px) {
+    .link-header{
+        font-size: 18px;
+        margin-right: 30px;
+    }
+
+    header {
+        margin: 20px 0 0 30px;
+    }
+
+    .link-header:nth-child(1), .link-header:nth-child(5) {
+        display: none;
+    }
+
+    .wrapper {
+        width: 350px;
+        padding-bottom: 10px;
+    }
+
+    #btn-fin {
+        margin: auto;
+        display: block;
+    }
+}
+
