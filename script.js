@@ -55,8 +55,8 @@ function finalizar() {
         let media = 0
 
         for (let pos in valores) {                               // Para cada posição em valores                   
-            soma += valores[pos]
-            media = soma / tot
+            sum += valores[pos]
+            media = sum / tot
 
             if (valores[pos] > maior) {                          // Se o valor de determinada posição for > o maior ele passa a ser o maior
             maior = valores[pos]                                 // O maior valor passa a ser valores[pos]
@@ -70,7 +70,7 @@ function finalizar() {
         res.innerHTML += `<p>Ao todo temos ${tot} número(s) cadastrado(s).</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
-        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${sum}.</p>`
         res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
 
     }
